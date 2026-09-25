@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b0f14;
+    color: #e6e9ef;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 24px;
+    line-height: 1.6;
+}
+
+#app {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Profil */
+
+.profile-card {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    background: #11161d;
+    border: 1px solid #1f2937;
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.profile-card .avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #1f2937;
+}
+
+.profile-card .name {
+    margin: 0;
+    font-size: 28px;
+}
+
+.profile-card .role {
+    margin: 4px 0 8px;
+    color: #9aa4b2;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.links a {
+    color: #e6e9ef;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Kártyák */
+
+.card {
+    background: #11161d;
+    border: 1px solid #1f2937;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 22px;
+}
+
+.card h3 {
+    margin: 0 0 4px;
+    font-size: 18px;
+}
+
+.card p {
+    color: #c5ccd6;
+}
+
+/* Tapasztalat */
+
+.experience {
+    padding: 14px 0;
+    border-bottom: 1px solid #1f2937;
+}
+
+.experience:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.date {
+    color: #9aa4b2 !important;
+    margin: 0 0 8px;
+}
+
+.experience ul {
+    margin-bottom: 0;
+    padding-left: 20px;
+    color: #c5ccd6;
+}
+
+/* Oktatás */
+
+.education {
+    padding: 14px 0;
+    border-bottom: 1px solid #1f2937;
+}
+
+.education:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.education p {
+    margin-top: 4px;
+}
+
+/* Készségek */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background: #1f2937;
+    color: #e6e9ef;
+    border: 1px solid #374151;
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+/* Kapcsolat */
+
+.contact-email {
+    color: #e6e9ef;
+    text-decoration: none;
+}
+
+.contact-email:hover {
+    text-decoration: underline;
+}
+
+/* Mobilnézet */
+
+@media (max-width: 600px) {
+    body {
+        padding: 14px;
+    }
+
+    .profile-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-card .avatar {
+        width: 90px;
+        height: 90px;
+    }
+
+    .profile-card .name {
+        font-size: 24px;
+    }
+
+    .links {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+}
