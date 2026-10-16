@@ -34,13 +34,13 @@ body {
     height: 96px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #00a896; /* Bermuda kék keret */
+    border: 2px solid #38bdf8; /* Világoskék keret */
 }
 
 .profile-card .name {
     margin: 0;
     font-size: 28px;
-    color: #00c49f; /* Bermuda kék név */
+    color: #38bdf8; /* Világoskék név */
 }
 
 .profile-card .role {
@@ -55,7 +55,7 @@ body {
 }
 
 .links a {
-    color: #00c49f; /* Bermuda kék linkek */
+    color: #38bdf8; /* Világoskék linkek */
     text-decoration: none;
 }
 
@@ -73,20 +73,20 @@ body {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
 }
 
-/* BERMUDA KÉK CÍMEK (H2 és H3) */
+/* VILÁGOSKÉK CÍMEK (H2 és H3) */
 .card h2 {
     margin-top: 0;
     margin-bottom: 16px;
     font-size: 22px;
-    color: #00c49f; /* Bermuda kék főszerkezet */
-    border-bottom: 2px solid #00a896; /* Bermuda kék aláhúzás */
+    color: #38bdf8; /* Világoskék főcímek */
+    border-bottom: 2px solid #0ea5e9; /* Kék aláhúzás */
     padding-bottom: 8px;
 }
 
 .card h3 {
     margin: 0 0 4px;
     font-size: 18px;
-    color: #38d9a9; /* Egy árnyalattal világosabb Bermuda kék az alcímeknek */
+    color: #7dd3fc; /* Még egy kicsit világosabb kék az alcímeknek */
 }
 
 .card p {
@@ -126,7 +126,7 @@ ul {
 .skill {
     background: #1f2937;
     color: #e6e9ef;
-    border: 1px solid #00a896; /* Bermuda kék keret a tegek körül */
+    border: 1px solid #0ea5e9; /* Kék keret a tegek körül */
     border-radius: 999px;
     padding: 6px 14px;
     font-size: 14px;
@@ -134,7 +134,7 @@ ul {
 
 /* Kapcsolat & Űrlap */
 .contact-email {
-    color: #00c49f;
+    color: #38bdf8;
     text-decoration: none;
 }
 
@@ -174,11 +174,11 @@ ul {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #00c49f; /* Bermuda kék fókusz keret */
+    border-color: #38bdf8; /* Világoskék fókusz keret */
 }
 
 .submit-btn {
-    background: #00a896; /* Bermuda kék gomb */
+    background: #0ea5e9; /* Világoskék gomb */
     color: white;
     border: none;
     border-radius: 8px;
@@ -191,13 +191,13 @@ ul {
 }
 
 .submit-btn:hover {
-    background: #028090;
+    background: #0284c7;
 }
 
 .form-status {
     margin-top: 12px;
     font-size: 14px;
-    color: #00c49f;
+    color: #38bdf8;
 }
 
 /* Mobilnézet */
