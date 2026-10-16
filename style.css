@@ -5,8 +5,7 @@
 body {
     background: #0b0f14;
     color: #e6e9ef;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Arial, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     margin: 0;
     padding: 24px;
     line-height: 1.6;
@@ -18,7 +17,6 @@ body {
 }
 
 /* Profil */
-
 .profile-card {
     display: flex;
     gap: 18px;
@@ -26,7 +24,7 @@ body {
     background: #11161d;
     border: 1px solid #1f2937;
     border-radius: 16px;
-    padding: 16px;
+    padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
@@ -36,12 +34,13 @@ body {
     height: 96px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #1f2937;
+    border: 2px solid #00a896; /* Bermuda kék keret */
 }
 
 .profile-card .name {
     margin: 0;
     font-size: 28px;
+    color: #00c49f; /* Bermuda kék név */
 }
 
 .profile-card .role {
@@ -56,7 +55,7 @@ body {
 }
 
 .links a {
-    color: #e6e9ef;
+    color: #00c49f; /* Bermuda kék linkek */
     text-decoration: none;
 }
 
@@ -65,72 +64,59 @@ body {
 }
 
 /* Kártyák */
-
 .card {
     background: #11161d;
     border: 1px solid #1f2937;
     border-radius: 16px;
-    padding: 20px;
+    padding: 24px;
     margin-bottom: 20px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
 }
 
+/* BERMUDA KÉK CÍMEK (H2 és H3) */
 .card h2 {
     margin-top: 0;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
     font-size: 22px;
+    color: #00c49f; /* Bermuda kék főszerkezet */
+    border-bottom: 2px solid #00a896; /* Bermuda kék aláhúzás */
+    padding-bottom: 8px;
 }
 
 .card h3 {
     margin: 0 0 4px;
     font-size: 18px;
+    color: #38d9a9; /* Egy árnyalattal világosabb Bermuda kék az alcímeknek */
 }
 
 .card p {
     color: #c5ccd6;
 }
 
-/* Tapasztalat */
-
-.experience {
-    padding: 14px 0;
+/* Tapasztalat & Oktatás */
+.experience, .education {
+    padding: 12px 0;
     border-bottom: 1px solid #1f2937;
 }
 
-.experience:last-child {
+.experience:last-child, .education:last-child {
     border-bottom: none;
     padding-bottom: 0;
 }
 
 .date {
     color: #9aa4b2 !important;
+    font-size: 14px;
     margin: 0 0 8px;
 }
 
-.experience ul {
+ul {
     margin-bottom: 0;
     padding-left: 20px;
     color: #c5ccd6;
 }
 
-/* Oktatás */
-
-.education {
-    padding: 14px 0;
-    border-bottom: 1px solid #1f2937;
-}
-
-.education:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
-.education p {
-    margin-top: 4px;
-}
-
 /* Készségek */
-
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -140,16 +126,15 @@ body {
 .skill {
     background: #1f2937;
     color: #e6e9ef;
-    border: 1px solid #374151;
+    border: 1px solid #00a896; /* Bermuda kék keret a tegek körül */
     border-radius: 999px;
-    padding: 6px 12px;
+    padding: 6px 14px;
     font-size: 14px;
 }
 
-/* Kapcsolat */
-
+/* Kapcsolat & Űrlap */
 .contact-email {
-    color: #e6e9ef;
+    color: #00c49f;
     text-decoration: none;
 }
 
@@ -157,8 +142,65 @@ body {
     text-decoration: underline;
 }
 
-/* Mobilnézet */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+}
 
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #9aa4b2;
+}
+
+.form-group input,
+.form-group textarea {
+    background: #0b0f14;
+    border: 1px solid #374151;
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: #e6e9ef;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #00c49f; /* Bermuda kék fókusz keret */
+}
+
+.submit-btn {
+    background: #00a896; /* Bermuda kék gomb */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    align-self: flex-start;
+}
+
+.submit-btn:hover {
+    background: #028090;
+}
+
+.form-status {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #00c49f;
+}
+
+/* Mobilnézet */
 @media (max-width: 600px) {
     body {
         padding: 14px;
@@ -184,9 +226,5 @@ body {
 
     .card {
         padding: 16px;
-    }
-
-    .card h2 {
-        font-size: 20px;
     }
 }
